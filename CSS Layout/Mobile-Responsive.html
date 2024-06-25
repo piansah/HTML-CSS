@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-Responsive</title>
+    <link rel="stylesheet" href="css/Mobile-Responsive.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            background-color: #efefef;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+
+        .header h1 {
+            margin-left: 20px;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        /* Menu */
+        .menu ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .menu li {
+            background-color: cadetblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: aliceblue;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .gambar img {
+            width: 100%;
+        }
+
+        .footer {
+            background-color: burlywood;
+            width: 100%;
+            height: 60px;
+            padding: 5px;
+            color: black;
+            text-align: center;
+        }
+
+        [class*="col-1"] {
+            padding: 10px;
+            width: 100%;
+        }
+
+        @media only screen and (min-width:768px) {
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width:58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+
+            [class*="col-1"] {
+                float: left;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Indonesia</h1>
+
+    </div>
+
+    <div class="container">
+        <div class="menu col-3">
+            <ul>
+                <li>The Islands</li>
+                <li>The Cities</li>
+                <li>The Foods</li>
+                <li>The Attractions</li>
+            </ul>
+        </div>
+        
+        <div class="konten col-6">
+            <h1>The Islands</h1>
+
+            <p>Indonesian is an archipelago country that has more than 17.000++ island and 62% of sea area.</p>
+            <p>There are 7 main island, Sumatra, Kalimantan, Jawa Sulawesi, Papua, Kepulauan Maluku, Kepulauan Sunda Kecil.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni et asperiores hic atque, tempora sapiente tempore eaque numquam explicabo aut quam obcaecati quidem, praesentium perferendis. Sapiente aliquid nisi quo. Mollitia!
+            Cupiditate similique, praesentium voluptatum sequi ab commodi error suscipit reiciendis quaerat impedit at nesciunt quos neque deleniti cum quia ipsum esse temporibus nisi quis? Deleniti, similique labore. Odit, commodi vel!
+            Dolore provident nulla quis iure cupiditate beatae ducimus quas! Aperiam deserunt velit cum obcaecati dicta ad quidem blanditiis officiis debitis dolor possimus, consequatur ipsum nam ab atque officia, a nostrum.</p>
+        </div>
+
+        <div class="gambar col-3">
+            <img src="image/map.gif" alt="peta">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright 2024</p>
+    </div>
+    </body>
+</html>

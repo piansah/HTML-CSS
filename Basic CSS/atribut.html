@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atribut</title>
+
+    <style>
+        a[target] {
+            color: red;
+        }
+        p[title="belajar"] {
+            color: blue;
+        }
+        p[title~="belajar"] {
+            color: blue;
+        }
+        p[title|="belajar"] {
+            color: blue;
+        }
+        p[title^="belajar"] {
+            color: blue;
+        }
+        p[title$="belajar"] {
+            color: blue;
+        }
+        p[title*="belajar"] {
+            color: blue;
+        }
+        /*atribut selector tanpa tag*/
+        [title*="belajar"] {
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="" target="_blank">contoh 1</a>
+    <a href="">contoh 1</a>
+    <a href="" target="_self">contoh 1</a>
+    <a href="">contoh 1</a>
+
+    <p title="belajar">ini dipilih</p>
+    <p title="belajar pemrograman">ini dipilih</p>
+    <p title="pemrograman">ini tidak dipilih</p>
+    <p title="belajar-pemrograman">ini dipilih</p>
+    <span title="pemrograman belajar">ini tidak dipilih</span>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header h1{
+    text-align: center;
+}
+
+#nav, #hightlight, #footer{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #efefef;
+}
+
+#nav li {
+    display: inline;
+    padding: 5px;
+}
+
+#hightlight img {
+    width: 20%;
+}
+
+.article {
+    float: left;
+    background-color: #efefef;
+    width: 280px;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+}
+
+.kolom1, .kolom3 {
+    background-color: aliceblue;
+}
+
+.kolom2 {
+    background-color: coral;
+}
+
+#content {
+    height: 100%;
+    overflow: auto;
+}
